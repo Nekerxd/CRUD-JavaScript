@@ -1,0 +1,112 @@
+:root {
+    --cor-azul: #2736ff;
+    --cor-verde: #4CAF50;
+    --cor-verde-escuro: #3e8e41;
+    --cor-branco: #fff;
+    --cor-cinza: #ccc;
+    --cor-azul-claro: #2196f3;
+    --cor-vermelho: #f44336;
+    --cor-vermelho-escuro: #dc3545;
+    --cor-amarelo: #ffc107;
+    --cor-ciano-escuro: rgba(102,175,233,.6);
+    --cor-preto: rgba(0,0,0,.075);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+#container {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#input-container {
+    margin-bottom: 2rem;
+}
+
+#name-input,
+#email-input,
+#update-name-input,
+#update-email-input {
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--cor-cinza);
+}
+
+#name-input:focus,
+#email-input:focus,
+#update-name-input:focus,
+#update-email-input:focus {
+    border-color: var(--cor-azul-claro);
+    outline: 0;
+    -webkit-box-shadow: inset 0 0.1rem var(--cor-preto),
+    0 0 0.8rem var(--cor-ciano-escuro);
+    box-shadow: inset 0 0.1rem var(--cor-preto),
+    0 0 0.8rem var(--cor-ciano-escuro);
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    background-color: var(--cor-verde-escuro);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 0.1rem solid var(--cor-cinza);
+}
+
+th {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+}
+
+#update-container {
+    display: none;
+    margin-top: 2rem;
+}
+
+#update-btn {
+    background-color: var(--cor-azul-claro);
+}
+
+#cancel-btn {
+    background-color: var(--cor-vermelho);
+}
+
+.edit-btn {
+    background-color: var(--cor-amarelo);
+}
+
+.delete-btn {
+    background-color: var(--cor-vermelho-escuro);
+    margin-left: 1rem;
+}
